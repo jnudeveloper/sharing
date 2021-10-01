@@ -14,9 +14,9 @@
 - Java的内存布局和虚拟机的一些基础知识、整体设计
 - 刷题和面试技巧经验
 - java语言规范和java虚拟机规范 阅读心得（分多次）
-- mybatis使用和源码分析 @eysam
-- netty使用和源码分析(从BIO到NIO到netty) @lgsbslgx
-- tomcat使用和源码分析 @lgsbslgx
+- mybatis使用和源码分析 [@eysam](https://github.com/eysam)
+- netty使用和源码分析(从BIO到NIO到netty) [@lgxbslgx](https://github.com/lgxbslgx)
+- tomcat使用和源码分析 [@lgxbslgx](https://github.com/lgxbslgx)
 - spring使用和源码分析（应该要分多次，spring-core、spring-mvc等）
 - springboot使用和源码分析（应该分多次）
 - Javac编译器分析
