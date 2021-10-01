@@ -4,8 +4,8 @@
 
 |主题|分享人|分享时间(东8区)|资料目录|参与人员汇总|
 |----|----|----|----|----|
-|OpenJDK概述|@lgsbslgx|2021年08月07日星期六|2021/openjdk_overview|@lgsbslgx @eysam @skywhat|
-|OpenJDK补丁案例分析|@lgxbslgx|2021年08月22日星期日|2021/openjdk_patch_analysis|@lgsbslgx @eysam @skywhat|
+|OpenJDK概述|[@lgxbslgx](https://github.com/lgxbslgx)|2021年08月07日星期六|[2021/openjdk_overview](https://github.com/jnudeveloper/sharing/tree/master/2021/openjdk_overview)|[@eysam](https://github.com/eysam) [@lgxbslgx](https://github.com/lgxbslgx) [@skywhat](https://github.com/skywhat)|
+|OpenJDK补丁案例分析|[@lgxbslgx](https://github.com/lgxbslgx)|2021年08月22日星期日|[2021/openjdk_patch_analysis](https://github.com/jnudeveloper/sharing/tree/master/2021/openjdk_patch_analysis)|[@eysam](https://github.com/eysam) [@lgxbslgx](https://github.com/lgxbslgx) [@skywhat](https://github.com/skywhat)|
 
 #### 待讲主题
 - lambda表达式在编译器和虚拟机的实现
