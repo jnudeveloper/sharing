@@ -64,5 +64,6 @@
 
 ### 参与人员汇总(按字母顺序排序)
 - [@eysam](https://github.com/eysam)
+- [@Janzer](https://github.com/Janzer)
 - [@lgxbslgx](https://github.com/lgxbslgx)
 - [@skywhat](https://github.com/skywhat)
