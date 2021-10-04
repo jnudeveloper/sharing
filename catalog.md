@@ -6,6 +6,7 @@
 |----|----|----|----|----|
 |OpenJDK概述|[@lgxbslgx](https://github.com/lgxbslgx)|2021年08月07日星期六|[2021/openjdk_overview](https://github.com/jnudeveloper/sharing/tree/master/2021/openjdk_overview)|[@eysam](https://github.com/eysam) [@lgxbslgx](https://github.com/lgxbslgx) [@skywhat](https://github.com/skywhat)|
 |OpenJDK补丁案例分析|[@lgxbslgx](https://github.com/lgxbslgx)|2021年08月22日星期日|[2021/openjdk_patch_analysis](https://github.com/jnudeveloper/sharing/tree/master/2021/openjdk_patch_analysis)|[@eysam](https://github.com/eysam) [@lgxbslgx](https://github.com/lgxbslgx) [@skywhat](https://github.com/skywhat)|
+|公司技术栈、工作内容、工作经验 分享|[@Janzer](https://github.com/Janzer)|2021年10月04日星期一|内部分享，不公开|[@eysam](https://github.com/eysam) [@Janzer](https://github.com/Janzer) [@lgxbslgx](https://github.com/lgxbslgx) [@skywhat](https://github.com/skywhat)|
 
 #### 待讲主题
 - lambda表达式在编译器和虚拟机的实现
