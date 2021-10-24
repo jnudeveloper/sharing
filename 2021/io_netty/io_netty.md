@@ -104,8 +104,8 @@
 - reactor线程模型（dispatcher、acceptor、reactor、selector）
     - 单reactor单线程: 可能是1个线程、也可能分别1个线程（即2个线程）
     - 单Reactor多线程（线程池）
-    - 主从Reactor线程（线程池）
-    - 多Reactor线程（线程池）
+    - 主从Reactor多线程（线程池）
+    - 多Reactor多线程（线程池）
 - proactor线程模型: 异步相关，提交操作（函数指针）给操作系统，让操作系统完成。
 
 ### netty
