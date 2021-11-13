@@ -1,5 +1,7 @@
 # Docker 的设计思路及其应用
 
+<img src="https://pic2.zhimg.com/v2-113d56db31a9e6d2bf7d8bd50e17babf_1440w.jpg?source=172ae18b" width="100%">
+
 ## 一、什么是 Docker？
 
 Docker 是一个使用 Go 语言开发的开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 或 Windows 操作系统的机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。
@@ -456,9 +458,14 @@ ADD 指令和 COPY 的使用格类似（同样需求下，官方推荐使用 COP
 
 ### 八、Docker 简单构建案例
 
-### 九、Docker 于 DevOps 中的应用
+参考代码
+https://github.com/jnudeveloper/sharing/blob/master/2021/docker/src
 
-### 参考链接
+### 九、持续化部署场景的应用(类似 Docker + Jenkins)
+
+<img src="https://file.kuailejiequ.cn/view/7b696b980516496eb7fa1169d085a3b7" width="100%">
+
+### 十、参考链接
 
 https://www.cnblogs.com/liuawen/p/12854029.html  
 https://www.cnblogs.com/ay-a/p/13362774.html
