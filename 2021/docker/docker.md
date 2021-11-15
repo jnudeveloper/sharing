@@ -465,6 +465,27 @@ https://github.com/jnudeveloper/sharing/blob/master/2021/docker/src
 
 <img src="https://file.kuailejiequ.cn/view/7b696b980516496eb7fa1169d085a3b7" width="100%">
 
+
+### 十、基础镜像选择
+我们在构建属于我们自己镜像的时候，需要对基础镜像进行选型。比如，当我们需要选择一个Nodejs的基础镜像用来构建我们自己的Nodejs项目镜像，我们会访问链接https://hub.docker.com/，搜索node，会出现如下结果：
+<img src="https://file.kuailejiequ.cn/view/ebfde44e054f4efdb0cf697de9e51a10" width="100%">
+随后我们点击第一个item进入详情，就看见了让人眼花缭乱的版本及tag
+<img src="https://file.kuailejiequ.cn/view/2fc1567f73bd4efe8ff48a0f80ac8c93" width="100%">
+<img src="https://file.kuailejiequ.cn/view/e93937f2c6fa4cc2a6e5a5fa03fdbfa6" width="100%">
+那我们该选哪个好呢？  
+我们通过简单的分析，可以看到tag由为[版本号]+[系统版本]组成，如
+17-alpine3.12，版本号为17，系统版本为alpine3.12，那么让我们简单介绍一下各个系统版本的区别：  
+1.  Buster
+buster是基于Debian Linux发行的一个版本，这个版本比较新，支持比较全面，受广大Debian爱好者的好评！所以像PHP、Python之类的语言、应用都会使用这个版本的Debian搭建Docker基础镜像。
+
+2. Alpine
+apline是Alpine Linux操作系统，它是一个独立发行版本，相比较Debian操作系统来说Alpine更加轻巧，而通过Docker镜像搭建微服务倡导的就是一个“轻量级”概念，所以很多语言、应用也都发布了Alpine版本的Docker基础镜像。
+
+3. Stretch
+stretch是Debian Linux发现的一个版本，这个版本在Debian Linux已经算是比较老旧的版本了，目前除了LTS其他版本已经不再提供技术支持了，所以我们非必要情况下还是不要选择它比较好。
+
+根据实际情况选择相关的系统版本
+
 ### 十、参考链接
 
 https://www.cnblogs.com/liuawen/p/12854029.html  
