@@ -9,6 +9,7 @@
 |公司技术栈、工作内容、工作经验 分享|[@Janzer](https://github.com/Janzer)|2021年10月04日星期一|内部分享，不公开|[@eysam](https://github.com/eysam) [@Janzer](https://github.com/Janzer) [@lgxbslgx](https://github.com/lgxbslgx) [@skywhat](https://github.com/skywhat)|
 |Mybatis源码分析|[@eysam](https://github.com/eysam)|2021年10月10日星期日|[2021/mybatis_source](https://github.com/jnudeveloper/sharing/tree/master/2021/mybatis_source)|[@eysam](https://github.com/eysam) [@Janzer](https://github.com/Janzer) [@lgxbslgx](https://github.com/lgxbslgx) [@skywhat](https://github.com/skywhat) [@WhenICoding](https://github.com/WhenICoding)|
 |io和netty|[@lgxbslgx](https://github.com/lgxbslgx)|2021年10月24日星期日|[2021/io_netty](https://github.com/jnudeveloper/sharing/tree/master/2021/io_netty)|[@eysam](https://github.com/eysam) [@Janzer](https://github.com/Janzer) [@lgxbslgx](https://github.com/lgxbslgx) [@skywhat](https://github.com/skywhat) [@WhenICoding](https://github.com/WhenICoding)|
+|Docker 的设计思路及其应用|[@eysam](https://github.com/eysam)|2021年11月20日星期六|[2021/docker](https://github.com/jnudeveloper/sharing/tree/master/2021/docker)|[@eysam](https://github.com/eysam) [@Janzer](https://github.com/Janzer) [@lgxbslgx](https://github.com/lgxbslgx)  [@WhenICoding](https://github.com/WhenICoding)|
 
 
 #### 待讲主题
