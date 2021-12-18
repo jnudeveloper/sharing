@@ -29,7 +29,7 @@ jmeter
 2. 如果勾选，则几个线程组是串行执行的（参考线程组部分）
 3. 引入外部jar包（详见BeanShell部分）
 
-![image-20211213230113961](C:\Users\Administrator.SKY-20181016MYJ\AppData\Roaming\Typora\typora-user-images\image-20211213230113961.png)
+![Image text](https://github.com/jnudeveloper/sharing/blob/master/2021/tuning/business_tuning/img/img1.png)
 
 ### 线程组
 
