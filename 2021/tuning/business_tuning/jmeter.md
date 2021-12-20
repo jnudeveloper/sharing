@@ -83,21 +83,94 @@ public Integer getRamdon() {
 
 运行之后在服务端（我的idea的控制台）可以看到输出结果，在Jmeter界面则看不到输出。
 
-## 图表
-
 ## 监听器
 
-## 控制器
+### 查看结果树
+
+这里可以看到每次请求的返回结果
+
+![Image text](https://github.com/jnudeveloper/sharing/blob/master/2021/tuning/business_tuning/img/img6.png)
+
+### 聚合报告
+
+生成一个统计表，列出线程组所有请求的响应时间数据。
+
+QPS = 并发线程数 ➗ 响应时间平均值
+
+QPS（每秒查询率）为服务器每秒能够相应的查询次数，是对一个特定的查询服务器在规定时间内所处理流量多少的衡量标准。
+
+![Image text](https://github.com/jnudeveloper/sharing/blob/master/2021/tuning/business_tuning/img/img6.png)
+
+## 配置原件
+
+### HTTP信息头管理器
+
+配置HTTP的请求头
+
+![Image text](https://github.com/jnudeveloper/sharing/blob/master/2021/tuning/business_tuning/img/img6.png)
 
 ## 断言
+
+在性能测试脚本中使用断言，一般是为了调试脚本。大多数情况下不可以使用断言，因为断言不仅会增加响应时间，拉低最终的结果值，还会占用系统资源。
+
+断言成功与否，可以通过监听器-断言结果查看。
+
+如果断言失败，则将此请求标记为失败，还会显示在察看结果树中，错误率会显示在聚合报告中。
+
+![Image text](https://github.com/jnudeveloper/sharing/blob/master/2021/tuning/business_tuning/img/img6.png)
 
 ## 输入可变参数
 
 ### CSV文件导入
 
+提前生成数据，存放在CSV文件中。将CSV文件导入到Jmeter中。
+
+![Image text](https://github.com/jnudeveloper/sharing/blob/master/2021/tuning/business_tuning/img/img6.png)
+
 ### BeanShell
 
-### CLI模式
+可以使用Jmeter的内嵌代码来生成随机数据。
+
+BeanShell 是一种完全符合Java语法规范的脚本语言，并且又拥有自己的一些语法和方法。
+
+下面是一段BeanShell代码。作用是自动生成并填充JSON数据的forder_id和order_sn变量值。
+
+```java
+import org.apache.commons.lang3.RandomStringUtils;
+vars.put("forder_id", RandomStringUtils.randomAlphanumeric(50));
+vars.put("order_sn", RandomStringUtils.randomAlphanumeric(50));
+
+import java.util.Random;
+vars.put("forder_id", "压测" + new Random().nextInt(Integer.MAX_VALUE) + new Random().nextInt(Integer.MAX_VALUE));
+vars.put("order_sn", "压测" + new Random().nextInt(Integer.MAX_VALUE) + new Random().nextInt(Integer.MAX_VALUE));
+```
+
+对应的JSON数据为：
+
+```json
+{
+  "order_id": "${forder_id}",
+  "consignment_number": "veniam aute Duis enimexercitation",
+  "order_sn": "${order_sn}",
+  "sku_list": [
+    {
+      "sku_id": "consequat veniam fugiat id ininc",
+      "sku_num_total": 3362795
+    },
+    {
+      "sku_id": "test2 veniam fugiat id ininc",
+      "sku_num_total": 3355795
+    }
+  ],
+  "purchase_time": 4700007,
+  "order_time": 43964068,
+  "last_tracking_no": "dolorcillumlabore in aliqua inincididunt adipisicing ex Duisveni"
+}
+```
+
+![Image text](https://github.com/jnudeveloper/sharing/blob/master/2021/tuning/business_tuning/img/img6.png)
+
+## CLI模式
 
 由于Jmeter是一个纯Java的应用，用GUI模式运行压力测试时，对客户端的资源消耗是很大的，所以在进行正式的压测时一定要使用非GUI模式运行。
 
@@ -110,6 +183,18 @@ For load testing, use CLI Mode (was NON GUI):
    Modify current env variable HEAP="-Xms1g -Xmx1g -XX:MaxMetaspaceSize=256m" in the jmeter batch file
 Check : https://jmeter.apache.org/usermanual/best-practices.html
 ```
+
+### CLI模式可选参数
+
+| 字段 | 含义 |
+| ------ | ------ |
+| -n | 指定 JMeter 将在 cli 模式下运行 |
+| -t | 包含测试计划的 jmx 文件名称 |
+| -l | 记录测试结果的 jtl 文件名称 |
+| -j | 记录 Jmeter 运行日志的文件名称 |
+| -g | 输出报告文件（ .csv 文件） |
+| -e | 生成 html 格式的测试报表 |
+| -o | 生成测试报表的文件夹，该文件夹必须不存在或者为空 |
 
 ### 在CLI模式下如何停止测试计划
 
