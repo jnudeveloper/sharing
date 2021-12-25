@@ -168,8 +168,6 @@ vars.put("order_sn", "压测" + new Random().nextInt(Integer.MAX_VALUE) + new Ra
 }
 ```
 
-![Image text](https://github.com/jnudeveloper/sharing/blob/master/2021/tuning/business_tuning/img/img6.png)
-
 ## CLI模式
 
 由于Jmeter是一个纯Java的应用，用GUI模式运行压力测试时，对客户端的资源消耗是很大的，所以在进行正式的压测时一定要使用非GUI模式运行。
