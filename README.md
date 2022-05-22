@@ -66,5 +66,6 @@
 - [@eysam](https://github.com/eysam)
 - [@Janzer](https://github.com/Janzer)
 - [@lgxbslgx](https://github.com/lgxbslgx)
+- [@malajuanxiao](https://github.com/malajuanxiao)
 - [@skywhat](https://github.com/skywhat)
 - [@WhenICoding](https://github.com/WhenICoding)
