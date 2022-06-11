@@ -127,7 +127,7 @@ kubectl proxy
 访问：
 https://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login
 
-##### 演示：
+#### 演示：
 地址： https://k8s.test.amatech.cn/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login
 
 token：
@@ -168,9 +168,15 @@ kubeadm join 172.18.150.81:6443 --token pnos9z.wi43j7mqanlzki0l --discovery-toke
 
 ```
 
+###### 实际应用中，我们会创建一个以完成环境安装OS镜像，配合初始化脚本，可以实现节点自动加入集群的效果。
+
+
 ###   五、 参考
+
 kubernetes.io : https://kubernetes.io/docs/setup/
+
 kubernetes-dashboard : https://github.com/kubernetes/dashboard
+
 
 
 
